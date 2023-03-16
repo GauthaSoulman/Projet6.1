@@ -1,0 +1,58 @@
+
+$primarycolor:#9356DC;
+$secodarycolor:#FF79DA;
+$tertiarycolor:#99E2D0;
+$searchcolor:#eaeaea;
+$contenucolor:#f7f7f7;
+
+
+header{
+    font-family: 'Shrikhand', cursive;
+    
+    text-align: center;
+
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin:-10px;
+}
+
+.formville{
+    display:grid;
+    .btnsearch{
+        text-align: center;
+        padding:15px;
+        background-color: $searchcolor;
+        color:black;     
+        ::placeholder{
+            color:black;
+        }
+    }
+}
+
+
+.sousmenu{
+    text-align: center;
+    background-color:$contenucolor;
+    margin-top: -20px;
+    padding:10%;
+    .btnexplorer{
+        color:white;
+        background-color: #9356dc;
+        background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);        
+        margin:30px;
+        border-radius: 50px;
+        padding:15px;
+        border:transparent;
+    }
+    
+}
+
+
+
+
+
+
+

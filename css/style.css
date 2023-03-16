@@ -1,0 +1,40 @@
+header {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: -10px;
+}
+
+.formville {
+  display: grid;
+}
+.formville .btnsearch {
+  text-align: center;
+  padding: 15px;
+  background-color: #eaeaea;
+  color: black;
+}
+.formville .btnsearch ::placeholder {
+  color: black;
+}
+
+.sousmenu {
+  text-align: center;
+  background-color: #f7f7f7;
+  margin-top: -20px;
+  padding: 10%;
+}
+.sousmenu .btnexplorer {
+  color: white;
+  background-color: #9356dc;
+  background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  margin: 30px;
+  border-radius: 50px;
+  padding: 15px;
+  border: transparent;
+}
+
+/*# sourceMappingURL=style.css.map */
