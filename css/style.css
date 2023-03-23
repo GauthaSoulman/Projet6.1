@@ -5,20 +5,25 @@ header {
 
 body {
   font-family: "Roboto", sans-serif;
-  margin: -10px;
+  margin: 0px;
 }
 
 .formville {
   display: grid;
+  position: relative;
 }
 .formville .btnsearch {
   text-align: center;
   padding: 15px;
   background-color: #eaeaea;
-  color: black;
 }
-.formville .btnsearch ::placeholder {
+.formville .btnsearch::placeholder {
   color: black;
+  font-size: 17px;
+  font-family: Arial, FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
 }
 
 .sousmenu {
@@ -35,6 +40,7 @@ body {
   border-radius: 50px;
   padding: 15px;
   border: transparent;
+  font-size: 17px;
 }
 
 .fonctionnement {
@@ -46,10 +52,20 @@ body {
   border: 1px solid #f7f7f7;
   background-color: #f7f7f7;
   border-radius: 10px;
-  padding: 25px;
-  text-align: center;
-  margin: 5px;
+  padding: 30px;
+  margin: 10px;
   box-shadow: 10px 5px 5px #eaeaea;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.liste {
+  padding: 5px;
+  background: #9356DC;
+  text-align: center;
+  color: white;
+  border-radius: 50px;
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */

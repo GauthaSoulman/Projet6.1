@@ -16,21 +16,28 @@ header{
 
 body{
     font-family: 'Roboto', sans-serif;
-    margin:-10px;
+    margin:0px;
 }
 
 .formville{
     display:grid;
+    position: relative;
     .btnsearch{
         text-align: center;
         padding:15px;
-        background-color: $searchcolor;
-        color:black;     
-        ::placeholder{
-            color: black;
+        background-color: $searchcolor;          
+        &::placeholder{
+            color: black; 
+            font-size: 17px;
+            font-family:Arial, FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: inherit;
         }
+
     }
 }
+
 
 
 .sousmenu{
@@ -46,25 +53,36 @@ body{
         border-radius: 50px;
         padding:15px;
         border:transparent;
+        font-size: 17px;
     }
     
 }
+  
 
 
 .fonctionnement{
     display:flex;
     flex-direction: column;
     padding:5%;
+
     .btnfc{
         border: 1px solid $contenucolor;
         background-color: $contenucolor;
         border-radius: 10px;
-        padding: 25px;
-        text-align: center;
-        margin:5px;
+        padding: 30px;          
+        margin:10px;
         box-shadow: 10px 5px 5px $searchcolor;
+        font-size: 18px;
+        font-weight:bold;
     }
-}
 
+    }
+    .liste{
+        padding: 5px;
 
-
+        background:$primarycolor;
+        text-align:center;
+        color:white;
+        border-radius:50px;
+        position:relative;
+    }
