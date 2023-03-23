@@ -37,4 +37,19 @@ body {
   border: transparent;
 }
 
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+.fonctionnement .btnfc {
+  border: 1px solid #f7f7f7;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  padding: 25px;
+  text-align: center;
+  margin: 5px;
+  box-shadow: 10px 5px 5px #eaeaea;
+}
+
 /*# sourceMappingURL=style.css.map */

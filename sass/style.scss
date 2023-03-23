@@ -27,7 +27,7 @@ body{
         background-color: $searchcolor;
         color:black;     
         ::placeholder{
-            color:black;
+            color: black;
         }
     }
 }
@@ -51,8 +51,20 @@ body{
 }
 
 
-
-
+.fonctionnement{
+    display:flex;
+    flex-direction: column;
+    padding:5%;
+    .btnfc{
+        border: 1px solid $contenucolor;
+        background-color: $contenucolor;
+        border-radius: 10px;
+        padding: 25px;
+        text-align: center;
+        margin:5px;
+        box-shadow: 10px 5px 5px $searchcolor;
+    }
+}
 
 
 
