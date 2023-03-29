@@ -57,6 +57,7 @@ body {
   padding: 0 70px 0 30px;
   margin-bottom: 20px;
   margin-left: 10px;
+  box-shadow: 2px 2px 10px #c4c3c0;
 }
 .fct__btn__icon {
   margin-right: 15px;
@@ -80,15 +81,5 @@ body {
 .fct__btn:hover :nth-child(2) {
   color: #9356DC;
 }
-
-/*     .ol{
-        padding: 5px;
-        background:$primarycolor;
-        text-align:center;
-        color:white;
-        border-radius:50px;
-        position:relative;
-    }
- */
 
 /*# sourceMappingURL=style.css.map */
