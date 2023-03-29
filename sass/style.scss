@@ -76,13 +76,18 @@ body{
         font-weight:bold;
     }
 
-    }
-    .liste{
-        padding: 5px;
+}
+ol {
+    list-style-position: inside;
+    color : #CC0000
 
+}
+/*     .ol{
+        padding: 5px;
         background:$primarycolor;
         text-align:center;
         color:white;
         border-radius:50px;
         position:relative;
     }
+ */
