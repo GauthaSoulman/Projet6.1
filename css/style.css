@@ -43,25 +43,42 @@ body {
   font-size: 17px;
 }
 
-.fonctionnement {
+.fct {
   display: flex;
   flex-direction: column;
   padding: 5%;
 }
-.fonctionnement .btnfc {
-  border: 1px solid #f7f7f7;
-  background-color: #f7f7f7;
-  border-radius: 10px;
-  padding: 30px;
-  margin: 10px;
-  box-shadow: 10px 5px 5px #eaeaea;
-  font-size: 18px;
-  font-weight: bold;
+.fct__btn {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 10px 10px 10px 10px;
+  padding: 0 70px 0 30px;
+  margin-bottom: 20px;
+  margin-left: 10px;
 }
-
-ol {
-  list-style-position: inside;
-  color: #CC0000;
+.fct__btn__icon {
+  margin-right: 15px;
+  color: #c4c3c0;
+}
+.fct__btn__number {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: -45px;
+  color: white;
+}
+.fct__btn:hover {
+  background-color: #f2eafb;
+}
+.fct__btn:hover :nth-child(2) {
+  color: #9356DC;
 }
 
 /*     .ol{
