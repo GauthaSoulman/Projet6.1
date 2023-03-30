@@ -6,6 +6,27 @@ $searchcolor:#eaeaea;
 $contenucolor:#f7f7f7;
 
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+    padding: 0;
+}
+
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
 header{
     font-family: 'Shrikhand', cursive;
     
@@ -100,4 +121,45 @@ body{
     }
 }
 
+// RESTAURANTS
+.restaurants{
+    padding:  55px 20px 45px 20px;
+    background-color: #f6f6f6;
+    &__title{
+      margin-bottom: 30px;  
+    }
+    &__card{
+      position: relative;
+      height: 250px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px #c4c3c0;
+      &__img{
+          display: block;
+          max-height: 175px;
+          width: 100%;
+          border-radius: 10px 10px 0 0;
+          object-fit: cover;
+      }
+      &__legend{
+          padding: 20px 15px 20px 15px;
+          display: flex;
+          justify-content: space-between;
+      }
+    }  
+  }
+  
+ .nouveau{
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 80px;
+    background-color: $tertiarycolor;
+    color: #008766;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
 
