@@ -1,0 +1,40 @@
+//  Animation de disparition du loader
+@keyframes loader{
+    0%{
+        background-color: rgba(196,195,192,1);
+    }
+    25%{
+        background-color:rgba(196,195,192,1);;
+    }
+    50%{
+        background-color:rgba(196,195,192,1);
+    }
+    80%{
+        background-color:rgba(196,195,192,0.5);
+    }
+    100%{
+        background-color:rgba(196,195,192,0.5);
+        visibility: hidden;
+    }
+}
+
+//Animation de la rotation
+@keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+  // Animation pour le remplissage du coeur "heart"
+@keyframes fill{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}

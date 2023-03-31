@@ -1,44 +1,70 @@
-
-$primarycolor:#9356DC;
-$secodarycolor:#FF79DA;
-$tertiarycolor:#99E2D0;
-$searchcolor:#eaeaea;
-$contenucolor:#f7f7f7;
+@import "./Utils/variables";
+@import "./Base/typo";
+@import "./Utils/animations";
+@import "./Components/element";
 
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+
+//Loading spinner
+.loader {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #c4c3c0;
+    position: fixed;
+    z-index: 1;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: loader 2s;
+    animation-fill-mode: both;
+    font-size:40px;
+    &__cercle{
+       
+            width:50px;
+            height: 50px;
+            border-radius: 50px;
+            border:3px solid transparent;
+            border-top-color: $primarycolor;
+            animation:rotation 1s linear infinite;
+            position:relative;
+            &::after{
+                content:'';
+                position:absolute;
+                top:5px;
+                left:5px;
+                bottom:5px;
+                right:5px;
+                border-radius:50px;
+                border:3px solid transparent;
+                border-top-color:$secondarycolor;
+                
+                animation:rotation 13s linear infinite;
+
+            }
+            &::before{
+                content:'';
+                position:absolute;
+                top:12px;
+                left:12px;
+                bottom:12px;
+                right:12px;
+                border-radius:50px;
+                border:5px solid transparent;
+                border-top-color:$tertiarycolor;
+                
+                animation:rotation 20s linear infinite;
+            }
+
+            
+
+    }
+
 }
-
-img{
-    max-width: 100%;
-    padding: 0;
-}
-
-
-ul{
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
-
-header{
-    font-family: 'Shrikhand', cursive;
-    
-    text-align: center;
-
-}
-
-
-body{
-    font-family: 'Roboto', sans-serif;
-    margin:0px;
-}
+      
+//Main
 
 .formville{
     display:grid;
@@ -81,11 +107,14 @@ body{
   
 
 //Fonctionnement 
+
 .fct{
     display:flex;
     flex-direction: column;
     padding:5%;
-
+    &__titre{
+        padding-bottom:20px;
+    }
     &__btn{
         height: 75px;
         display: flex;
@@ -149,17 +178,24 @@ body{
     }  
   }
   
- .nouveau{
-    display: inline-block;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 30px;
-    width: 80px;
-    background-color: $tertiarycolor;
-    color: #008766;
-    position: absolute;
-    right: 10px;
-    top: 15px;
-}
 
+//footer
+.footer{
+    background-color: #353535;
+    padding: 25px;
+    &__logo{
+        font-size: 24px;
+        font-family: 'Shrikhand', sans-serif;
+        color: white;
+        margin-bottom: 15px;
+    }
+    &__txt{
+        color: white;
+    }
+    &__icons{
+        margin-right: 10px;
+    }
+    &__menu{
+        margin-bottom: 10px;
+    }
+}
