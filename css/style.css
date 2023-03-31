@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  margin: 0px;
+  font-size: 20px;
 }
 
 img {
@@ -27,11 +27,11 @@ header {
 
 h1 {
   font-family: "Shrikhand", sans-serif;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 30px;
 }
 
 @keyframes loader {
@@ -68,6 +68,38 @@ h2 {
     opacity: 1;
   }
 }
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.delay1 {
+  animation-delay: 0.1s;
+}
+
+.delay2 {
+  animation-delay: 0.3s;
+}
+
+.delay3 {
+  animation-delay: 0.6s;
+}
+
+.delay4 {
+  animation-delay: 0.9s;
+}
+
+@keyframes progress {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 .nouveau {
   display: inline-block;
   display: flex;
@@ -92,6 +124,136 @@ h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+}
+
+.page_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 25px 10px 25px;
+}
+.page_header__retour {
+  left: 20px;
+  position: absolute;
+  margin: -9px;
+}
+.page_header__titre {
+  margin: auto;
+}
+
+.page_img {
+  max-height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.page_main {
+  margin-top: -30px;
+  position: relative;
+  border-radius: 30px 30px 0 0;
+  background-color: #f6f6f6;
+  padding: 35px 15px 20px 15px;
+}
+.page_main__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+.page_main__header__title {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 40px;
+}
+
+.plat {
+  padding: 10px;
+  padding-bottom: 40px;
+  background-color: #f6f6f6;
+}
+.plat__header {
+  margin-bottom: 25px;
+}
+.plat__header ::after {
+  content: "";
+  display: block;
+  margin-top: 5px;
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+  animation: progress 2s;
+  animation-fill-mode: both;
+  transform: scale(0);
+}
+.plat__card {
+  height: 70px;
+  width: 100%;
+  padding-left: 10px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px #c4c3c0;
+  animation: appear 0.5s;
+  animation-timing-function: cubic-bezier(0.57, -0.3, 0.36, 1.2);
+  transform: scale(0);
+  animation-fill-mode: both;
+}
+.plat__card__txt {
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.plat__card__txt--over {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.plat__card__price {
+  margin-left: 10px;
+}
+.plat__card__check {
+  height: 70px;
+  width: 60px;
+  opacity: 0;
+  background-color: #99E2D0;
+  margin-left: 25px;
+  margin-right: -70px;
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.7s ease-in-out;
+}
+.plat__card:hover :nth-child(3) {
+  opacity: 1;
+  margin-right: 0px;
+}
+.plat__card:hover .check_icons {
+  opacity: 1;
+  transform: rotate(-360deg);
+}
+
+.bouton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+}
+
+.btn {
+  display: grid;
+  color: white;
+  background-color: #9356dc;
+  background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  border-radius: 50px;
+  padding: 15px 50px;
+  border: transparent;
+  font-size: 17px;
+  margin: 20px;
+  margin-top: -25px;
 }
 
 .loader {
@@ -250,10 +412,10 @@ h2 {
 
 .footer {
   background-color: #353535;
-  padding: 25px;
+  padding: 30px;
 }
 .footer__logo {
-  font-size: 24px;
+  font-size: 30px;
   font-family: "Shrikhand", sans-serif;
   color: white;
   margin-bottom: 15px;

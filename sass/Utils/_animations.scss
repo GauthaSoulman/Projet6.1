@@ -38,3 +38,42 @@
         opacity: 1;
     }
 }
+
+// Animation d'apparition des "cards" pour les menus
+@keyframes appear{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+// delais d'apparition des "cards" pour les menus
+.delay1{
+    animation-delay: 0.1s;
+}
+
+.delay2{
+    animation-delay: 0.3s;
+}
+
+.delay3{
+    animation-delay: 0.6s;
+}
+
+.delay4{
+    animation-delay: 0.9s;
+}
+
+
+
+// Animation pour le soulignage des intitulés "entrées, plats, desserts"
+@keyframes progress{
+    0%{
+        transform: scaleX(0);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}

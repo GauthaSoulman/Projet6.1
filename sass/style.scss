@@ -2,6 +2,7 @@
 @import "./Base/typo";
 @import "./Utils/animations";
 @import "./Components/element";
+@import "./Components/page";
 
 
 
@@ -182,9 +183,9 @@
 //footer
 .footer{
     background-color: #353535;
-    padding: 25px;
+    padding: 30px;
     &__logo{
-        font-size: 24px;
+        font-size: 30px;
         font-family: 'Shrikhand', sans-serif;
         color: white;
         margin-bottom: 15px;
