@@ -1,0 +1,499 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+img {
+  max-width: 100%;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+@keyframes loader {
+  0% {
+    background-color: rgb(196, 195, 192);
+  }
+  25% {
+    background-color: rgb(196, 195, 192);
+  }
+  50% {
+    background-color: rgb(196, 195, 192);
+  }
+  80% {
+    background-color: rgba(196, 195, 192, 0.5);
+  }
+  100% {
+    background-color: rgba(196, 195, 192, 0.5);
+    visibility: hidden;
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.delay1 {
+  animation-delay: 0.1s;
+}
+
+.delay2 {
+  animation-delay: 0.3s;
+}
+
+.delay3 {
+  animation-delay: 0.6s;
+}
+
+.delay4 {
+  animation-delay: 0.9s;
+}
+
+@keyframes progress {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+.nouveau {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 80px;
+  background-color: #99E2D0;
+  color: #008766;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+.heart {
+  font-size: 20px;
+  color: grey;
+}
+.heart:hover {
+  animation: fill 1s ease-out;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+@keyframes loader {
+  0% {
+    background-color: rgb(196, 195, 192);
+  }
+  25% {
+    background-color: rgb(196, 195, 192);
+  }
+  50% {
+    background-color: rgb(196, 195, 192);
+  }
+  80% {
+    background-color: rgba(196, 195, 192, 0.5);
+  }
+  100% {
+    background-color: rgba(196, 195, 192, 0.5);
+    visibility: hidden;
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.delay1 {
+  animation-delay: 0.1s;
+}
+
+.delay2 {
+  animation-delay: 0.3s;
+}
+
+.delay3 {
+  animation-delay: 0.6s;
+}
+
+.delay4 {
+  animation-delay: 0.9s;
+}
+
+@keyframes progress {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+.page_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 25px 10px 25px;
+}
+.page_header__retour {
+  left: 20px;
+  position: absolute;
+  margin: -9px;
+}
+.page_header__titre {
+  margin: auto;
+}
+
+.page_img {
+  max-height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.page_main {
+  margin-top: -30px;
+  position: relative;
+  border-radius: 30px 30px 0 0;
+  background-color: #f6f6f6;
+  padding: 35px 15px 20px 15px;
+}
+.page_main__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+.page_main__header__title {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 40px;
+}
+
+.plat {
+  padding: 10px;
+  padding-bottom: 40px;
+  background-color: #f6f6f6;
+}
+.plat__header {
+  margin-bottom: 25px;
+}
+.plat__header ::after {
+  content: "";
+  display: block;
+  margin-top: 5px;
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+  animation: progress 2s;
+  animation-fill-mode: both;
+  transform: scale(0);
+}
+.plat__card {
+  height: 70px;
+  width: 100%;
+  padding-left: 10px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px #c4c3c0;
+  animation: appear 5s;
+  animation-timing-function: cubic-bezier(0.57, -0.3, 0.36, 1.2);
+  transform: scale(0);
+  animation-fill-mode: both;
+}
+.plat__card__txt {
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.plat__card__txt--over {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.plat__card__price {
+  margin-left: 10px;
+}
+.plat__card__check {
+  height: 70px;
+  width: 60px;
+  opacity: 0;
+  background-color: #99E2D0;
+  margin-left: 25px;
+  margin-right: -70px;
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.7s ease-in-out;
+}
+.plat__card:hover :nth-child(3) {
+  opacity: 1;
+  margin-right: 0px;
+}
+.plat__card:hover .check_icons {
+  opacity: 1;
+  transform: rotate(-360deg);
+}
+
+.bouton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+}
+
+.btn {
+  display: grid;
+  color: white;
+  background-color: #9356dc;
+  background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  border-radius: 50px;
+  padding: 15px 50px;
+  border: transparent;
+  font-size: 17px;
+  margin: 20px;
+  margin-top: -25px;
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #c4c3c0;
+  position: fixed;
+  z-index: 1;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: loader 2s;
+  animation-fill-mode: both;
+  font-size: 40px;
+}
+.loader__cercle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 3px solid transparent;
+  border-top-color: #9356DC;
+  animation: rotation 1s linear infinite;
+  position: relative;
+}
+.loader__cercle::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  bottom: 5px;
+  right: 5px;
+  border-radius: 50px;
+  border: 3px solid transparent;
+  border-top-color: #FF79DA;
+  animation: rotation 13s linear infinite;
+}
+.loader__cercle::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  bottom: 12px;
+  right: 12px;
+  border-radius: 50px;
+  border: 5px solid transparent;
+  border-top-color: #99E2D0;
+  animation: rotation 20s linear infinite;
+}
+
+.formville {
+  display: grid;
+  position: relative;
+}
+.formville .btnsearch {
+  text-align: center;
+  padding: 15px;
+  background-color: #eaeaea;
+}
+.formville .btnsearch::placeholder {
+  color: black;
+  font-size: 17px;
+  font-family: Arial, FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+}
+
+.sousmenu {
+  text-align: center;
+  background-color: #f7f7f7;
+  margin-top: -20px;
+  padding: 10%;
+}
+.sousmenu .btnexplorer {
+  color: white;
+  background-color: #9356dc;
+  background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  margin: 30px;
+  border-radius: 50px;
+  padding: 15px;
+  border: transparent;
+  font-size: 17px;
+}
+
+.fct {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+.fct__titre {
+  padding-bottom: 20px;
+}
+.fct__btn {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 10px 10px 10px 10px;
+  padding: 0 70px 0 30px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  box-shadow: 2px 2px 10px #c4c3c0;
+}
+.fct__btn__icon {
+  margin-right: 15px;
+  color: #c4c3c0;
+}
+.fct__btn__number {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: -45px;
+  color: white;
+}
+.fct__btn:hover {
+  background-color: #f2eafb;
+}
+.fct__btn:hover :nth-child(2) {
+  color: #9356DC;
+}
+
+.restaurants {
+  padding: 55px 20px 45px 20px;
+  background-color: #f6f6f6;
+}
+.restaurants__title {
+  margin-bottom: 30px;
+}
+.restaurants__card {
+  position: relative;
+  height: 250px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #c4c3c0;
+}
+.restaurants__card__img {
+  display: block;
+  max-height: 175px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+.restaurants__card__legend {
+  padding: 20px 15px 20px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  background-color: #353535;
+  padding: 30px;
+}
+.footer__logo {
+  font-size: 30px;
+  font-family: "Shrikhand", sans-serif;
+  color: white;
+  margin-bottom: 15px;
+}
+.footer__txt {
+  color: white;
+}
+.footer__icons {
+  margin-right: 10px;
+}
+.footer__menu {
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=style.css,.map */
