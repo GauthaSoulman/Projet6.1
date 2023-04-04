@@ -92,7 +92,7 @@
     text-align: center;
     background-color:$contenucolor;
     margin-top: -20px;
-    padding:10%;
+    padding: 40px 30px 55px 30px;
     .btnexplorer{
         color:white;
         background-color: #9356dc;
@@ -177,8 +177,9 @@
           justify-content: space-between;
       }
     }  
-  }
+}
   
+
 
 //footer
 .footer{
@@ -199,4 +200,29 @@
     &__menu{
         margin-bottom: 10px;
     }
+}
+@media screen and (min-width: 1024px) {
+    .container{
+        display:flex;
+        justify-content: space-around;
+        &__card{
+            width: 49%;
+        }
+    }    
+    .restaurants__title{
+        margin-left:30% ;
+    }
+    .footer__logo{
+        margin-left:30%;
+    }
+    .footer__menu{
+        margin-left:30%;
+    }
+    .containerrestaurant{
+        display:flex;
+        background-color: #f6f6f6;
+        padding-left:10%;
+        padding-bottom: 5   %;
+    }
+ 
 }
