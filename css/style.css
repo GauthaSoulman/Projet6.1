@@ -1,10 +1,10 @@
-/* Error: expected selector.
- *    ,
- * 40 | }
- *    |  ^
- *    '
- *   sass\Utils\_animations.scss 40:2  @import
- *   sass\style.scss 3:9               root stylesheet */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
 
 img {
   max-width: 100%;
@@ -69,7 +69,7 @@ h2 {
   }
 }
 .delay1 {
-  animation-delay: 0.1s;
+  animation-delay: 50s;
 }
 
 .delay2 {
@@ -161,7 +161,73 @@ h2 {
   }
 }
 .delay1 {
-  animation-delay: 0.1s;
+  animation-delay: 50s;
+}
+
+.delay2 {
+  animation-delay: 0.3s;
+}
+
+.delay3 {
+  animation-delay: 0.6s;
+}
+
+.delay4 {
+  animation-delay: 0.9s;
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes progress {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes loader {
+  0% {
+    background-color: rgb(196, 195, 192);
+  }
+  25% {
+    background-color: rgb(196, 195, 192);
+  }
+  50% {
+    background-color: rgb(196, 195, 192);
+  }
+  80% {
+    background-color: rgba(196, 195, 192, 0.5);
+  }
+  100% {
+    background-color: rgba(196, 195, 192, 0.5);
+    visibility: hidden;
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.delay1 {
+  animation-delay: 50s;
 }
 
 .delay2 {
@@ -520,3 +586,33 @@ h2 {
 .footer__menu {
   margin-bottom: 10px;
 }
+
+@media screen and (min-width: 1024px) {
+  .container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .container__card {
+    width: 49%;
+  }
+  .restaurants__title {
+    margin-left: 30%;
+  }
+  .footer__logo {
+    margin-left: 30%;
+  }
+  .footer__menu {
+    margin-left: 30%;
+  }
+  .containerrestaurant {
+    display: flex;
+    background-color: #f6f6f6;
+    padding-left: 20%;
+    padding-bottom: 5%;
+  }
+  .page_main {
+    padding-left: 20%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
