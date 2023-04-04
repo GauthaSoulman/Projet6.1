@@ -38,20 +38,6 @@
         opacity: 1;
     }
 }
-
-// Animation d'apparition des "cards" pour les menus
-@keyframes appear{
-    0%{
-        transform: scale(0);
-        
-    }
-    100%{
-        
-        transform: scale(0.5);
-
-    }
-}
-
 // delais d'apparition des "cards" pour les menus
 .delay1{
     animation-delay: 50s;
@@ -67,6 +53,18 @@
 
 .delay4{
     animation-delay: 0.9s;
+}
+
+
+// Animation d'apparition des "cards" pour les menus
+@keyframes appear{
+    0%{
+        transform: scale(0);
+        
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 
