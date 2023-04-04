@@ -1,6 +1,9 @@
 
+@import "../Utils/animations";
 //Header
-
+.color{
+    background-color: #f6f6f6;
+}
 .page_header{
     display:flex;
     align-items: center;
@@ -79,6 +82,7 @@
         margin-bottom: 15px;
         overflow: hidden;
         box-shadow: 2px 2px 10px #c4c3c0;
+        animation:  appear 0.5s;
         animation-timing-function: cubic-bezier(.57,-0.3,.36,1.2);
         transform: scale(0);
         animation-fill-mode: both;
@@ -141,3 +145,22 @@
 
 }
 
+.delay1{
+    animation-delay: 0.1s;
+}
+.delay2{
+    animation-delay: 0.3s;
+}
+
+.delay3{
+    animation-delay: 0.6s;
+}
+
+.delay4{
+    animation-delay: 0.9s;
+}
+@media screen and (min-width: 1024px) {
+    .plat{
+        padding:10px;
+    }
+}
