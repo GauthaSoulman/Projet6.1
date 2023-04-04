@@ -73,11 +73,11 @@ h2 {
     transform: scale(0);
   }
   100% {
-    transform: scale(1);
+    transform: scale(0.5);
   }
 }
 .delay1 {
-  animation-delay: 0.1s;
+  animation-delay: 50s;
 }
 
 .delay2 {
@@ -165,11 +165,11 @@ h2 {
     transform: scale(0);
   }
   100% {
-    transform: scale(1);
+    transform: scale(0.5);
   }
 }
 .delay1 {
-  animation-delay: 0.1s;
+  animation-delay: 50s;
 }
 
 .delay2 {
@@ -261,7 +261,6 @@ h2 {
   margin-bottom: 15px;
   overflow: hidden;
   box-shadow: 2px 2px 10px #c4c3c0;
-  animation: appear 5s;
   animation-timing-function: cubic-bezier(0.57, -0.3, 0.36, 1.2);
   transform: scale(0);
   animation-fill-mode: both;
