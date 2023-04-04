@@ -73,11 +73,11 @@ h2 {
     transform: scale(0);
   }
   100% {
-    transform: scale(1);
+    transform: scale(0.5);
   }
 }
 .delay1 {
-  animation-delay: 0.1s;
+  animation-delay: 50s;
 }
 
 .delay2 {
@@ -126,6 +126,72 @@ h2 {
   font-weight: bold;
 }
 
+@keyframes loader {
+  0% {
+    background-color: rgb(196, 195, 192);
+  }
+  25% {
+    background-color: rgb(196, 195, 192);
+  }
+  50% {
+    background-color: rgb(196, 195, 192);
+  }
+  80% {
+    background-color: rgba(196, 195, 192, 0.5);
+  }
+  100% {
+    background-color: rgba(196, 195, 192, 0.5);
+    visibility: hidden;
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
+.delay1 {
+  animation-delay: 50s;
+}
+
+.delay2 {
+  animation-delay: 0.3s;
+}
+
+.delay3 {
+  animation-delay: 0.6s;
+}
+
+.delay4 {
+  animation-delay: 0.9s;
+}
+
+@keyframes progress {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 .page_header {
   display: flex;
   align-items: center;
@@ -195,7 +261,6 @@ h2 {
   margin-bottom: 15px;
   overflow: hidden;
   box-shadow: 2px 2px 10px #c4c3c0;
-  animation: appear 0.5s;
   animation-timing-function: cubic-bezier(0.57, -0.3, 0.36, 1.2);
   transform: scale(0);
   animation-fill-mode: both;
