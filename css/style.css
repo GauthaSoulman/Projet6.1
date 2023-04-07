@@ -84,12 +84,12 @@ h2 {
   animation-delay: 0.9s;
 }
 
-@keyframes appear {
+@keyframes apparition {
   0% {
-    transform: scale(0);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    opacity: 1;
   }
 }
 @keyframes progress {
@@ -176,12 +176,12 @@ h2 {
   animation-delay: 0.9s;
 }
 
-@keyframes appear {
+@keyframes apparition {
   0% {
-    transform: scale(0);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    opacity: 1;
   }
 }
 @keyframes progress {
@@ -242,12 +242,12 @@ h2 {
   animation-delay: 0.9s;
 }
 
-@keyframes appear {
+@keyframes apparition {
   0% {
-    transform: scale(0);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    opacity: 1;
   }
 }
 @keyframes progress {
@@ -331,9 +331,9 @@ h2 {
   margin-bottom: 15px;
   overflow: hidden;
   box-shadow: 2px 2px 10px #c4c3c0;
-  animation: appear 0.5s;
+  animation: apparition 2s;
   animation-timing-function: cubic-bezier(0.57, -0.3, 0.36, 1.2);
-  transform: scale(0);
+  transform: scale(1);
   animation-fill-mode: both;
 }
 .plat__card__txt {

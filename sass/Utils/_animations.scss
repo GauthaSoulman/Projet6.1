@@ -57,13 +57,13 @@
 
 
 // Animation d'apparition des "cards" pour les menus
-@keyframes appear{
+@keyframes apparition{
     0%{
-        transform: scale(0);
+        opacity:0;
         
     }
     100%{
-        transform: scale(1);
+        opacity:1;
     }
 }
 

@@ -85,9 +85,9 @@
         margin-bottom: 15px;
         overflow: hidden;
         box-shadow: 2px 2px 10px #c4c3c0;
-        animation:  appear 0.5s;
+        animation:  apparition 2s;
         animation-timing-function: cubic-bezier(.57,-0.3,.36,1.2);
-        transform: scale(0);
+        transform: scale(1);
         animation-fill-mode: both;
         &__txt{
             width: 90%;
