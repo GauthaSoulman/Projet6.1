@@ -100,6 +100,20 @@ h2 {
     transform: scaleX(1);
   }
 }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  75% {
+    transform: rotate(360deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
 .nouveau {
   display: inline-block;
   display: flex;
@@ -192,6 +206,20 @@ h2 {
     transform: scaleX(1);
   }
 }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  75% {
+    transform: rotate(360deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
 @keyframes loader {
   0% {
     background-color: rgb(196, 195, 192);
@@ -256,6 +284,20 @@ h2 {
   }
   100% {
     transform: scaleX(1);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  75% {
+    transform: rotate(360deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
   }
 }
 .color {
@@ -369,6 +411,7 @@ h2 {
 }
 .plat__card:hover .check_icons {
   opacity: 1;
+  animation: spin 2s;
   transform: rotate(-360deg);
 }
 
