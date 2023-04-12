@@ -38,9 +38,10 @@
         opacity: 1;
     }
 }
+
 // delais d'apparition des "cards" pour les menus
 .delay1{
-    animation-delay: 50s;
+    animation-delay: 0.1s;
 }
 
 .delay2{
@@ -80,6 +81,8 @@
         transform: scaleX(1);
     }
 }
+
+//Animation rotation bouton check
 @keyframes spin {
 	0% {
 		transform: rotate(0deg);
