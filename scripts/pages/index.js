@@ -1,6 +1,4 @@
-import { PhotographesFactory } from "../factories/photographer.js";
-import { PhotographeApi} from "../api/api.js";
-import { PhotographesCarte } from "../template/photographecard.js";
+
 
    
    
