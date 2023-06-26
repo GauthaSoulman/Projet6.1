@@ -24,4 +24,3 @@ function systemeLike(id, type) {
     document.getElementById("profil-likes-photographe").innerHTML = nbLikeTotal;
 }
 
-export {systemeLike};

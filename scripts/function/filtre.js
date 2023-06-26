@@ -20,5 +20,3 @@ function filtres(type) {
     }
 }
 
-
-export {filtres};

@@ -45,5 +45,3 @@ function validerContact() {
     console.log("ADRESSE EMAIL : " + email);
     console.log("MESSAGE : " + message);
 }
-
-export {contact,fermerContact,validerContact};

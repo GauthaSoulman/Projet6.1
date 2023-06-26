@@ -88,4 +88,3 @@ function flecheDroite(index) {
     }
 }
 
-export {ouvreLightbox,fermerLightbox,flecheGauche,flecheDroite};
