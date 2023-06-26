@@ -1,7 +1,3 @@
-
-
-   
-   
    class Accueil {
       constructor() {
         //Recupere Element
