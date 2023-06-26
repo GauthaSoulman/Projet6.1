@@ -19,3 +19,5 @@ class PhotoFactory {
         }
     }
 }
+
+export { PhotographesFactory };
