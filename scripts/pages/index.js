@@ -1,4 +1,10 @@
-    class Accueil {
+import { PhotographesFactory } from "../factories/photo.js";
+import { PhotographeApi} from "../api/api.js";
+import { PhotographesCarte } from "../template/photographecard.js";
+
+   
+   
+   class Accueil {
       constructor() {
         //Recupere Element
           this.listePhotographes = document.querySelector('.photographer_section');
